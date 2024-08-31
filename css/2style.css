@@ -1,0 +1,467 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(150, 174, 253);
+}
+
+
+button {
+    border-radius: 5px;
+    padding: 4px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.425);
+    box-shadow: 0 0  2px;
+    border: none;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgba(255, 255, 255, 0.623);
+    box-shadow: 0 0 5px;
+    scale: 1.05;
+}
+
+/*CALCULADORA EDAD*/
+.divBirthAge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(43, 177, 255);
+    outline: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.divBirthAgeChilds {
+    margin: 10px;
+}
+
+/*CALCULADORA*/
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px; 
+    background-color:
+    lightgrey;
+    outline: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; align-items: center; 
+    align-content: space-around;
+}
+
+/*PIEDRA, PAPEL, TIJERAS*/
+
+.fatherRPS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rockPapperSiccers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: lightgoldenrodyellow;
+    outline: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    height: 500px;
+}
+
+.pPTOpciones {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.pPT {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    
+}
+
+.pPT:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+
+/*ADIVINANZA NÚMEROS*/
+
+#advFather {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, rgb(221, 63, 155) 0%, rgb(253, 188, 49) 100%);
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+    text-shadow:  0px 0px 3px black;
+}
+
+h3 {
+    text-align: center;
+}
+
+#inputsAdv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 80%;
+    text-align: center;
+    margin: 2px;
+    border-radius: 4px;
+    min-width: 30px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+#inpAdv1 {
+    min-width: 50px;
+}
+
+#tryAgain {
+    position: absolute;
+    visibility: hidden;
+}
+
+/*APP LISTA DE TAREAS*/
+#list {
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#appList {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 246, 115);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 200px;
+    max-height: 400px;
+}
+
+#listNav {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 10px;
+    height: 15%;
+}
+
+#listSearchNav {
+    text-align: left;
+    padding: 0 50px 0 10px;
+    border-radius: 30px;
+    border: none;
+    height: 30px;
+    width: 100%;
+}
+
+#navLupa:hover {
+    cursor: pointer;
+}
+
+#navInsert:hover {
+    cursor: pointer;
+}
+
+#navInsert {
+    position: absolute;
+    width: 20px;
+    right: 5%;
+}
+
+#listBody {
+    position: relative;
+    box-sizing: border-box;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+#listBody::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  #listBody::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  #listBody::-webkit-scrollbar-thumb {
+    background-color: #fcff3100;
+    border-radius: 50px;
+    border: 1px solid #00000049;
+  }
+
+#listTitle {
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+#appListElements {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.appLiClass {
+    cursor: pointer;
+    word-wrap: break-word;
+}
+.appLiClass:focus {
+    font-size:larger;
+    background-color: rgba(255, 255, 255, 0.301);
+    cursor: pointer;
+    word-wrap: break-word;
+}
+
+#listButtons {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.listButton {
+    width: 50%;
+}
+
+#borrarTodo {
+    position: relative;
+    margin-top: 20px;
+    width: 30%;
+}
+
+.listPopUp {
+    text-align: center;
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 9px;
+    max-width: 50%;
+    background-color: #ffee51;
+    outline: 1px solid rgba(0, 0, 0, 0.123);
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.listPopUp.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.listPopSpan {
+    color: rgb(255, 72, 0);
+}
+
+#listSvg {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#listSvg img {
+    width: 25px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    /*MOBILE APP LISTA DE TAREAS*/
+#list {
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#appList {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 246, 115);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 200px;
+    max-height: 500px;
+}
+
+#listNav {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 10px;
+    height: 15%;
+}
+
+#listSearchNav {
+    text-align: left;
+    padding: 0 50px 0 10px;
+    border-radius: 30px;
+    border: none;
+    height: 30px;
+    width: 100%;
+}
+
+#navLupa:hover {
+    cursor: pointer;
+}
+
+#navInsert:hover {
+    cursor: pointer;
+}
+
+#navInsert {
+    position: absolute;
+    width: 20px;
+    right: 5%;
+}
+
+#listBody {
+    position: relative;
+    box-sizing: border-box;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+#listBody::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  #listBody::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  #listBody::-webkit-scrollbar-thumb {
+    background-color: #fcff3100;
+    border-radius: 50px;
+    border: 1px solid #00000049;
+  }
+
+#listTitle {
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+#appListElements {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.appLiClass {
+    cursor: pointer;
+    word-wrap: break-word;
+}
+.appLiClass:focus {
+    font-size:larger;
+    background-color: rgba(255, 255, 255, 0.301);
+    cursor: pointer;
+    word-wrap: break-word;
+}
+
+#listButtons {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.listButton {
+    width: 50%;
+}
+
+#borrarTodo {
+    position: relative;
+    margin-top: 20px;
+    width: 30%;
+}
+
+.listPopUp {
+    text-align: center;
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 9px;
+    max-width: 50%;
+    background-color: #ffee51;
+    outline: 1px solid rgba(0, 0, 0, 0.123);
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.listPopUp.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.listPopSpan {
+    color: rgb(255, 72, 0);
+}
+
+#listSvg {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#listSvg img {
+    width: 25px;
+    cursor: pointer;
+}
+}

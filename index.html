@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/2style.css">
+    <title>2 Página de proyectos</title>
+</head>
+<body>
+    <!--CALCULADORA EDAD-->
+    <div class='divBirthAge'>
+        <label class="divBirthAgeChilds" for='birthAge'><b>CALCULA TU EDAD Y SI ERES MAYOR DE EDAD</b></label>
+        <input class="divBirthAgeChilds"  id='birthAge' type='number' placeholder="Año de nacimiento" style="border-radius: 10px;"></input>
+        <button class="divBirthAgeChilds"  style="border-radius: 10px;" onclick='calculator()'>Calculate</button>
+        <p class="divBirthAgeChilds"  id="result">RESULTADO</p>
+        <p class="divBirthAgeChilds"  id="actualAge">Edad actual aparecerá aquí.</p>
+        <img class="divBirthAgeChilds"  id="imgCalculator" src="" style="width: 200px; border-radius: 10px;">
+    </div>
+    <!--CALCULADORA-->
+    <div class="calculadora">
+        <input id="op1" type="number">
+        <div class="calcBtns">
+            <button onclick="test1()">+</button>
+            <button onclick="test2()">-</button>
+            <button onclick="test3()">/</button>
+            <button onclick="test4()">*</button>
+        </div>
+        <input id="op2" type="number">
+        <button onclick='calculatorFunction()'>Calcular</button>
+        <p id="calculatorResultText">(Resultado aquí)</p>
+    </div>
+    <!--ROCK, PAPPER, SICCERS-->
+    <div class="fatherRPS">
+        <div id="rockPapperSiccersId" class="rockPapperSiccers">
+            <h2 id="tituloPPT">JUEGO DE PIEDRA, PAPEL O TIJERAS</h2>
+            <img class="pPT" id="machineImg" src="https://cdn-icons-png.flaticon.com/512/6831/6831874.png">
+            <h3 id="h3PPT">Elige la opción con la que jugarás</h3>
+            <div class="pPTOpciones">
+                <img class="pPT" id="piedra" onclick="piedra()" src="https://cdn-icons-png.flaticon.com/512/2491/2491229.png">
+                <img class="pPT" id="papel" onclick="papel()" src="https://cdn-icons-png.flaticon.com/256/1527/1527520.png">
+                <img class="pPT" id="tijeras" onclick="tijeras()" src="https://static.vecteezy.com/system/resources/thumbnails/012/627/940/small_2x/peace-sign-human-hand-gesture-png.png">
+            </div>
+            <button id="pptBtn" onclick="pptMachine()">JUGAR</button>
+            <button id="pptBtn1" onclick="pptOptClear()">Elegir de nuevo</button>
+        </div>
+    </div>
+    <!--ADIVINANZA DE NÚMEROS-->
+    <div id="advFather">
+        <h3>ADIVINA NÚMERO DEL <span id="xAdv">"x"</span> AL <span id="yAdv">"y"</span></h3>
+        <h3 id="pistaAdv">¿Cerca o lejos?</h3>
+        <div id="inputsAdv">
+            <input class="inpAdvClass" id="inpAdv0" type="number" placeholder="x">
+            <input class="inpAdvClass" id="inpAdv1" type="number" placeholder="Apuesta">
+            <input class="inpAdvClass" id="inpAdv2" type="number" placeholder="y">
+            <button id="insertgAdv" onclick="xyMachine()">Insertar "x" e "y"</button>
+            <button id="tryAdv" onclick="userOptMachine()">Probar suerte</button>
+        </div>
+        <button id="tryAgain" onclick="winnerClear()">JUGAR DE NUEVO</button>
+    </div>
+    <!--Aplicación Lista-->
+    <div id="list">
+        <div id="appList">
+            <nav id="listNav">
+                <input id="listSearchNav" type="text" autocomplete="off">
+                <img id="navInsert" src="img/send-alt-1-svgrepo-com.svg" onclick="sendToList()">
+            </nav>
+            <h3 id="listTitle">LISTA TAREAS</h3>
+            <div id="listBody">
+                <ul id="appListElement">
+                </ul>
+            </div>
+            <div id="listButtons">
+                <button class="listButton" onclick="tachar()">Tachar</button>
+                <button class="listButton" onclick="destachar()">Destachar</button>
+                <button class="listButton" onclick="borrar()">Borrar</button>
+                <button id="borrarTodo" class="listButton" onclick="document.querySelector('.listPopUp').classList.add('active');">Borrar Todo</button>
+                <div class="listPopUp">
+                    <div id="listSvg" onclick="document.querySelector('.listPopUp').classList.remove('active');">
+                        <img src="img/cross-svgrepo-com.svg">
+                    </div>
+                    <p>¿Está seguro de borrar toda la lista?<br>Esta <span class="listPopSpan">acción</span> es <span class="listPopSpan">irreversible.</span></p>
+                    <button id="listPopBtn" onclick="borrarTodo()">Borrar todo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--RELOJ USANDO DEPENDENCIA-->
+    <div>
+        <div id="zone"><p id="zoneP"></p></div>
+        <div id="time"><p id="timeP"></p></div>
+        <div id="date"><p id="dateP"></p></div>
+    </div>
+    <script src="node_modules/dayjs/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
+    <script src="js/pagina.js"></script>
+</body>
+</html>

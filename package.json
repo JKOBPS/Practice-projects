@@ -1,0 +1,22 @@
+{
+  "name": "javascript-miniproyectos",
+  "version": "1.0.0",
+  "description": "A page dedicated to create progects that help me to get confidence and experience with the code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Beginner",
+    "projects",
+    "learning",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Jacob Parra Silva",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.13"
+  }
+}
