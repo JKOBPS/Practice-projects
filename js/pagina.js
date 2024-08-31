@@ -319,6 +319,9 @@ let date = document.getElementById('dateP');
 zone.innerHTML = dayjs().format(`dddd`);
 time.innerHTML = dayjs().format(`hh:mm:ss`);
 date.innerHTML = dayjs().format('DD MMMM YYYY');
+
+
+
 //COMENTARIO PARA MODIFICAR EL PROYECTO EN EL BRANCH EXPERIMENTAL
 //ÉSTE CAMBIO SÓLO DEBERÍA VERSE EN MASTER BRANCH
 //este comentario es para hacer un commit de este branch
