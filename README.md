@@ -1,3 +1,3 @@
 ﻿# Practice-projects
 -Little apps created while learning JavaScript.
-All apps will be upgraded by the time I will learn new best practices, you can see all the upgrades by looking at the commits in github.com/JKOBPS/Practice-projects
+Just a few mini projects to practice the basics of a programming lenguage, you can use this like an example of where to start.
